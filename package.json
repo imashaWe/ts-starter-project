@@ -7,14 +7,23 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start:tsc": "tsc -w",
     "start:js": "nodemon dist/index.js",
-    "start": "concurrently npm:start:*"
+    "start": "concurrently npm:start:*",
+    "lint": "eslint --ext .js,.ts ."
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.56.0",
+    "@typescript-eslint/parser": "^5.56.0",
     "concurrently": "^7.6.0",
+    "eslint": "^8.36.0",
+    "eslint-config-standard-with-typescript": "^34.0.1",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-n": "^15.6.1",
+    "eslint-plugin-promise": "^6.1.1",
     "nodemon": "^2.0.21",
-    "prettier": "2.8.6"
+    "prettier": "2.8.6",
+    "typescript": "^5.0.2"
   }
 }
